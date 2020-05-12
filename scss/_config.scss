@@ -7,12 +7,37 @@ $max-width: 1100px;
 
 // function - set color based on background
 @function set-text-color($color) {
-  @if (lightness($color) > 50) {
+  @if (lightness($color) > 60) {
     @return $dark-color;
   } @else {
     @return $light-color;
   }
 }
+
+// - set margin and padding
+$values: (1, 2, 3, 4, 5);
+@each $value in $values {
+  // X and Y margin
+  .m-#{$value} {
+    margin: #{$value}rem;
+  }
+
+  // Y margin
+  .my-#{$value} {
+    margin: #{$value}rem 0;
+  }
+
+  // X and Y padding
+  .p-#{$value} {
+    padding: #{$value}rem;
+  }
+
+  // Y padding
+  .py-#{$value} {
+    padding: #{$value}rem 0;
+  }
+}
+
 //******** Mixins ***********//
 
 // -set background and text

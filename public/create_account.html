@@ -15,6 +15,7 @@
     <link rel="stylesheet" type="text/css" href="css/main.css" />
     <title>Welcome to Sar-Sari</title>
   </head>
+
   <body>
     <nav class="navbar bg-dark">
       <h1>
@@ -24,24 +25,33 @@
       </h1>
       <ul>
         <li><a href="profiles.html">Shops</a></li>
-        <li><a href="create_account.html">Register</a></li>
+        <li><a href="register.html">Register</a></li>
         <li><a href="login.html">Login</a></li>
       </ul>
     </nav>
-    <section class="landing">
-      <div class="dark-overlay">
-        <div class="landing-inner">
-          <h1 class="x-large">Welcome to Sari-Sari</h1>
-          <p class="lead">
-            Create your own shop, share your own products or browse items sold
-            around the world!
-          </p>
-          <div class="buttons">
-            <a href="register.html" class="btn btn-primary">Sign Up</a>
-            <a href="login.html" class="btn">Login</a>
-          </div>
+    <section class="container">
+      <h1 class="large text-primary">Sign Up</h1>
+      <p class="lead">
+        <span class="material-icons">account_circle</span>Create Your Account
+      </p>
+      <form action="dashboard.html" class="form">
+        <div class="form-group">
+          <input type="text" placeholder="Name" />
         </div>
-      </div>
+        <div class="form-group">
+          <input type="email" placeholder="Email Address" />
+        </div>
+        <div class="form-group">
+          <input type="password" placeholder="Password" />
+        </div>
+        <div class="form-group">
+          <input type="password" placeholder="Confirm Password" />
+        </div>
+        <input type="submit" value="register" class="btn btn-primary" />
+      </form>
+      <p class="my-1">
+        Already have an account?<a href="login.html">Sign In</a>
+      </p>
     </section>
   </body>
 </html>
