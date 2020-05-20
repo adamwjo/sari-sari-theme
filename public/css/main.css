@@ -108,6 +108,10 @@
   color: #303c6c;
 }
 
+.round-img {
+  border-radius: 50%;
+}
+
 .bg-primary {
   background-color: #b4dfe5;
   color: #303c6c;
@@ -309,6 +313,16 @@ i {
   align-items: center;
   justify-content: center;
   text-align: center;
+}
+
+.profile {
+  display: grid;
+  grid-template-columns: 2fr 4fr 2fr;
+  grid-gap: 2rem;
+  align-items: center;
+  padding: 1rem;
+  line-height: 1.8;
+  margin-bottom: 1rem;
 }
 
 /*# sourceMappingURL=main.css.map */
