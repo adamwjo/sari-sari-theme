@@ -112,6 +112,12 @@
   border-radius: 50%;
 }
 
+.line {
+  height: 1px;
+  background: #ccc;
+  margin: 1.5rem 0;
+}
+
 .bg-primary {
   background-color: #b4dfe5;
   color: #303c6c;
@@ -323,6 +329,62 @@ i {
   padding: 1rem;
   line-height: 1.8;
   margin-bottom: 1rem;
+}
+
+.profile-grid {
+  display: grid;
+  grid-template-areas: "top top" "about about" "features info";
+  grid-gap: 1rem;
+}
+.profile-grid .profile-top {
+  grid-area: top;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+.profile-grid .profile-top img {
+  width: 250px;
+}
+.profile-grid .profile-top .icons a {
+  color: #fffff0;
+}
+.profile-grid .profile-top .icons a:hover {
+  color: #303c6c;
+}
+.profile-grid .profile-about {
+  grid-area: about;
+  text-align: center;
+}
+.profile-grid .profile-about .specialties {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+.profile-grid .profile-about .specialties i {
+  top: 6px;
+}
+.profile-grid .profile-features {
+  grid-area: features;
+}
+.profile-grid .profile-info {
+  grid-area: info;
+}
+.profile-grid .profile-features > div,
+.profile-grid .profile-info > div {
+  margin-bottom: 1rem;
+  padding-bottom: 1rem;
+  border-bottom: grey 1px solid;
+}
+.profile-grid .profile-features > div:last-child,
+.profile-grid .profile-info > div:last-child {
+  border: none;
+}
+.profile-grid .profile-features p,
+.profile-grid .profile-info p {
+  margin: 0.5 0;
 }
 
 /*# sourceMappingURL=main.css.map */

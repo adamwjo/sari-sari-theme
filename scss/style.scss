@@ -84,7 +84,7 @@ i {
   }
 }
 
-//**************** Profiles Page **************
+//**************** Profiles Index Page **************
 .profile {
   display: grid;
   grid-template-columns: 2fr 4fr 2fr;
@@ -93,4 +93,74 @@ i {
   padding: 1rem;
   line-height: 1.8;
   margin-bottom: 1rem;
+}
+
+//***************** Profile Show Page ******************
+.profile-grid {
+  display: grid;
+  grid-template-areas:
+    'top top'
+    'about about'
+    'features info';
+  grid-gap: 1rem;
+
+  .profile-top {
+    grid-area: top;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+
+    img {
+      width: 250px;
+    }
+
+    .icons a {
+      color: #fffff0;
+
+      &:hover {
+        color: $dark-color;
+      }
+    }
+  }
+
+  .profile-about {
+    grid-area: about;
+    text-align: center;
+
+    .specialties {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+
+      i {
+        top: 6px;
+      }
+    }
+  }
+
+  .profile-features {
+    grid-area: features;
+  }
+
+  .profile-info {
+    grid-area: info;
+  }
+
+  .profile-features,
+  .profile-info {
+    & > div {
+      margin-bottom: 1rem;
+      padding-bottom: 1rem;
+      border-bottom: grey 1px solid;
+      &:last-child {
+        border: none;
+      }
+    }
+    p {
+      margin: 0.5 0;
+    }
+  }
 }
