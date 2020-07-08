@@ -145,6 +145,15 @@
   border: #c1c1c1 1px solid;
 }
 
+.table th,
+.table td {
+  padding: 1rem;
+  text-align: left;
+}
+.table th {
+  background: #f4f4f4;
+}
+
 .btn {
   display: inline-block;
   background: #f4f4f4;

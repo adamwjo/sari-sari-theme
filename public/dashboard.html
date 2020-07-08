@@ -25,8 +25,19 @@
       </h1>
       <ul>
         <li><a href="profiles.html">Shops</a></li>
-        <li><a href="create_account.html">Register</a></li>
-        <li><a href="login.html">Login</a></li>
+        <li><a href="create_account.html">Posts</a></li>
+        <li>
+          <a href="dashboard.html"
+            ><i class="material-icons">dashboard</i
+            ><span class="hide-sm">Dashboard</span></a
+          >
+        </li>
+        <li>
+          <a href="login.html"
+            ><i class="material-icons">exit_to_app</i
+            ><span class="hide-sm">Logout</span></a
+          >
+        </li>
       </ul>
     </nav>
     <section class="container">
@@ -36,6 +47,56 @@
       <p class="lead">
         <i class="material-icons">account_circle</i> Welcome user
       </p>
+      <div class="dash-buttons">
+        <a href="create_profile.html" class="btn"
+          ><i class="material-icons text-primary">edit</i> Edit Profile</a
+        >
+        <a href="create_profile.html" class="btn"
+          ><i class="material-icons text-primary">shopping_cart</i> Add a
+          Product</a
+        >
+        <a href="create_profile.html" class="btn"
+          ><i class="material-icons text-primary">search</i> View Customers</a
+        >
+      </div>
+      <h2 class="my-2">
+        Store Inventory
+      </h2>
+      <table class="table">
+        <thead>
+          <tr>
+            <th>Product Name</th>
+            <th class="hide-sm">Price</th>
+            <th class="hide-sm">Inventory</th>
+            <th></th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Apples</td>
+            <td class="hide-sm">$0.99</td>
+            <td class="hide-sm">30</td>
+            <td><button class="btn btn-danger">delete</button></td>
+          </tr>
+          <tr>
+            <td>Milk</td>
+            <td class="hide-sm">$2.99</td>
+            <td class="hide-sm">15</td>
+            <td><button class="btn btn-danger">delete</button></td>
+          </tr>
+          <tr>
+            <td>White Bread</td>
+            <td class="hide-sm">$2.00</td>
+            <td class="hide-sm">15</td>
+            <td><button class="btn btn-danger">delete</button></td>
+          </tr>
+        </tbody>
+      </table>
+      <div class="my-2">
+        <button class="btn btn-danger">
+          <i class="material-icons">delete_forever</i> Delete my account
+        </button>
+      </div>
     </section>
   </body>
 </html>
